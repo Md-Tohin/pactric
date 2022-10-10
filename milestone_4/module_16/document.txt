@@ -1,0 +1,10 @@
+Question :
+
+    1) What is javascript language ?
+    2) History of javascript ? 
+    3) Javascript run three process 
+            No 1 :- Browser
+            No 2 :-  Codepen app
+            No 3 :- Code editor
+    4) 
+    

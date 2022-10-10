@@ -1,0 +1,55 @@
+Note No :- 01
+const liCollections = (document.getElementsByTagName('tagName');
+for(const li of liCollections){
+    console.log(li.innerHTML);
+}
+
+Note No :- 02
+console.log(document.getElementById('idName'));
+
+Note No :- 03 
+const classNames = document.getElementsByClassName('className');
+for(const className of classNames){
+    console.log(className);
+}
+
+//  Note No :- 04
+    const names = document.querySelectorAll('#name');
+    for(const name of names){
+        console.log(name.innerText);
+    }
+
+    const languages = document.querySelectorAll('#languages li');
+    for(const language of languages){
+        console.log(language.innerText);
+    }
+
+    const language = document.querySelector('#languages li');
+    console.log(language.innerText);
+
+    const nameList = document.querySelectorAll('.name-list li');
+    for(const name of nameList){
+        console.log(name.innerText);
+    }
+
+    const firstLi = document.querySelector('.name-list li');
+    console.log(firstLi.innerText);
+
+    // Note No :- 05
+    const title = document.getElementById('name');
+    title.style.color='red'
+    console.log(title.getAttribute('id'));
+    console.log(title.getAttribute('class'));
+    console.log(title.classList);
+    title.classList.remove('bg-green');
+    console.log(title.classList);
+    title.classList.add('pt-5');
+    console.log(title.classList);
+    title.setAttribute('title', 'This is Title Set in JS');
+
+
+    const information = document.getElementsByClassName('information');
+    console.log(information[0].innerHTML);
+    console.log(information[0].innerText);
+    console.log(information[0].innerHTML='<h2>DOM Change Html</h2>');
+

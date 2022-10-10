@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Basic</title>
+    <style>
+        /* body{
+            color: #d45105;
+        } */
+        .bg-yellow{
+            background: #b5fd9f !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>This is Dom. DOM means Document Object Model.</h1>
+    </header>
+    <main>
+        <hr>
+        <section class="information">
+            <h1 id="name" class="hello tohin bg-green text-center">Hello, I am Md. Tohin</h1>
+            <ul id="languages">
+                <li class="text-red">PHP</li>
+                <li class="text-red">Java</li>
+                <li class="text-red">Python</li>
+                <li class="text-red">Javascript</li>
+            </ul>
+        </section>
+        <section class="information_2">
+            <h1 id="name_2" class="hello tohin bg-green text-center">Hello, I am Md. Tohin</h1>
+            <ul id="languages_2">
+                <li class="text-red">PHP</li>
+                <li class="text-red">Java</li>
+                <li class="text-red">Python</li>
+                <li class="text-red">Javascript</li>
+            </ul>
+        </section>
+        <section id="section-container">
+            <h1 id="name_3" class="hello tohin bg-green text-center">Hello, I am Md. Tohin</h1>
+            <ul id="languages_3">
+                <li class="text-red">PHP</li>
+                <li class="text-red">Java</li>
+                <li class="text-red">Python</li>
+                <li class="text-red">Javascript</li>
+            </ul>
+        </section>
+        <hr>
+        <ul class="name-list">
+            <li>Karim</li>
+            <li>Rana</li>
+            <li>Mamun</li>
+        </ul>
+        <p id="designationTitle">I am web designer and developer. My skills HTML, CSS, Bootstrap, Javascript etc.</p>
+        <ul id="countryName">
+            <li>Country</li>
+            <li>India</li>
+            <li>China</li>
+            <li>Napel</li>
+            <li>Canada</li>
+        </ul>
+        <p id="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, nesciunt consequatur? Corrupti, aperiam praesentium. Tenetur exercitationem a delectus necessitatibus, magni fuga sequi officiis repudiandae commodi distinctio ut sit, nostrum fugit? Corrupti eligendi eaque expedita odit debitis ab perferendis ullam alias, libero officia excepturi repellendus ratione maiores qui consequatur non quisquam quos exercitationem quaerat corporis quas nostrum laboriosam esse. Rem quaerat dolores ad maiores distinctio maxime ratione vel laudantium sit expedita reiciendis eius praesentium atque quod doloribus tenetur magnam accusamus voluptatem, possimus dolore iste. Iusto placeat mollitia fugit eaque suscipit, quae, doloremque doloribus hic voluptate sed porro ratione quasi ullam, libero facere magnam vero aperiam voluptatibus repudiandae. Facere necessitatibus inventore dicta repellendus ducimus molestias? Rem quisquam incidunt veniam tempora! Minima a officiis dolores optio asperiores? Voluptates doloribus molestias possimus cumque optio pariatur facilis, at consectetur, tempore minima id fugiat provident, natus officia sunt nostrum quas vitae suscipit dolor itaque neque tempora quidem est eius? Assumenda rem dignissimos atque recusandae placeat, voluptatem ut, iusto perferendis, ullam temporibus cupiditate optio nam quaerat deserunt aperiam quia ipsa dolor ratione nobis! Enim ipsam ea repellat non officiis nostrum neque! Tempora iste quod, commodi, ab delectus dignissimos earum explicabo accusamus repellat nemo dolores assumenda, molestias eius alias tenetur! Dignissimos eum quod nulla impedit recusandae voluptas quam quis id assumenda adipisci? Fuga doloremque vel vitae ducimus eius deleniti dolor explicabo, sit similique exercitationem repudiandae assumenda harum. Id fuga dolorum labore, et molestiae, quae nam nisi minus fugit saepe consectetur inventore error magni, totam corporis aspernatur reprehenderit nobis?</p>
+    </main>
+
+    <script src="js/dom.js"></script>i
+    <script>
+        //  Note no:- 01
+        /*
+        liCollections = document.getElementsByTagName('li');
+        for(const li of liCollections){
+            console.log(li.innerHTML);
+        }
+        */
+
+        //  Note no:- 02
+        /*
+        const name = document.getElementById('name');
+        name.innerText = 'My Name is Tohin.';
+        // console.log(document.getElementById('name').innerHTML = 'My Name is Tohin.');
+        // console.log(document.getElementById('name').innerText = 'My Name is Rucon.');
+        console.log(document.getElementById('designationTitle').innerHTML = 'I\'m a full stack web developer with more than 2 year\'s experience. I am a talented, ambitious, hardworking individual. My skills and experience is Responsive website design, customize, development and many more...');
+        console.log(document.getElementById('description').innerText);
+        */
+
+        //  Note no:- 03
+        /*
+        const textReds = document.getElementsByClassName('text-red');
+        for(const textRed of textReds){
+            console.log(textRed.innerText);
+        }
+        */
+
+        //  Note No :- 04
+        /*
+        const names = document.querySelectorAll('#name');
+        for(const name of names){
+            console.log(name.innerText);
+        }
+
+        const languages = document.querySelectorAll('#languages li');
+        for(const language of languages){
+            console.log(language.innerText);
+        }
+
+        const language = document.querySelector('#languages li');
+        console.log(language.innerText);
+
+        const nameList = document.querySelectorAll('.name-list li');
+        for(const name of nameList){
+            console.log(name.innerText);
+        }
+
+        const firstLi = document.querySelector('.name-list li');
+        console.log(firstLi.innerText);
+        */
+
+        // Note No :- 05
+        /*
+        const title = document.getElementById('name');
+        title.style.color='red'
+        console.log(title.getAttribute('id'));
+        console.log(title.getAttribute('class'));
+        console.log(title.classList);
+        title.classList.remove('bg-green');
+        console.log(title.classList);
+        title.classList.add('pt-5');
+        console.log(title.classList);
+        title.setAttribute('title', 'This is Title Set in JS');
+
+
+        const information = document.getElementsByClassName('information');
+        console.log(information[0].innerHTML);
+        console.log(information[0].innerText);
+        console.log(information[0].innerHTML='<h2>DOM Change Html</h2>');
+        */
+
+
+
+        
+
+        
+        
+        
+
+    </script>
+</body>
+
+</html>

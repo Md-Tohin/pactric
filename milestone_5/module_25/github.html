@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hedding">My Secret Info</h1>
+    <input id="inputField" type="text">
+    <button id="deleteBtn" disabled="disabled">Delete</button>
+
+    <script>
+        document.getElementById('inputField').addEventListener('mous', function(){
+        // document.getElementById('inputField').addEventListener('keyup', function(){
+            const inputText = document.getElementById('inputField').value;
+            if (inputText === 'delete') {
+                document.getElementById('deleteBtn').removeAttribute('disabled');
+            } else {
+                document.getElementById('deleteBtn').setAttribute('disabled', true);
+            }
+        })
+        document.getElementById('deleteBtn').addEventListener('click', function(){
+           const hedding = document.getElementById('hedding');
+           hedding.style.display='none';
+           document.getElementById('inputField').value = '';
+        })
+    </script>
+</body>
+</html>

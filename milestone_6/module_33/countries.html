@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 35px 0;
+            color: tomato;
+        }
+        #countries-container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 0 35px;
+        }
+        .country{
+            background: rgb(252, 189, 164);
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .btn{
+            background: tomato;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 15px;
+            border: 1px solid saddlebrown;
+        }        
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h2>All Country Information Here</h2>
+    </header>
+    <main>
+        <section style="margin: 50px auto">
+            <div id="country-details">
+                
+            </div>
+        </section>
+        <section>
+            <div id="countries-container">
+
+            </div>
+        </section>
+    </main>
+
+    <script src="js/country.js"></script>
+</body>
+</html>
