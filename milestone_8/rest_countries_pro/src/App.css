@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+.App {  
+  text-align: center;
+}
+.main-container{
+  margin: 30px 100px;
+  color: #525050;
+}
+
+/* .section-title{
+  color: tomato;
+  font-size: 34px;
+  letter-spacing: 1px;
+} */
+
+.countries-container{
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.country{
+  border-radius: 15px ;
+  padding: 15px 10px;
+  border: 1px solid sandybrown;
+}
+.country img{
+  width: 100%;
+  height: 180px;
+}
+.country h1{
+  font-size: 20px;
+}
