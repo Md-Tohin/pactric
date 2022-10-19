@@ -1,0 +1,41 @@
+.cart {
+    background: #FFE0B3;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.cart-title {
+    color: #1C2B35;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+.cart-details h3{
+    margin-top: 10px;
+}
+
+.cart-details p {
+    font-size: 17px;
+    padding: 10px 0;
+}
+
+.btn {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.clear-btn, .review-btn {
+    border: none;
+    background: #FF3030;
+    border-radius: 4px;
+    width: 100%;
+    padding: 15px 0;
+    color: white;
+    margin: 7px 0;
+}
+
+.review-btn{
+    background: #FF9900;
+}

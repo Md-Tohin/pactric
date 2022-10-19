@@ -1,0 +1,16 @@
+.section-title{
+    text-align: center;
+    color: tomato;
+    margin: 40px 0;
+}
+
+.friendsContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+  .friend{
+    border: 2px solid tomato;
+    border-radius: 15px;
+    padding: 15px;
+  }
